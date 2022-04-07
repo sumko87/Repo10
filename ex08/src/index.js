@@ -1,18 +1,18 @@
 function myObject() {
     'use strict';
     const MATH_CONSTANTS = {
-    E: 2.71828
+        E: 2.71828
     };
     // Only change code below this line
     Object.freeze(MATH_CONSTANTS);
     // Only change code above this line
-    try {
+try {
     MATH_CONSTANTS.E = 23;
-    } catch(error) {
+} catch(error) {
     console.log(error.message);
-    }
-    return MATH_CONSTANTS.E;
-    }
-    const E = myObject();
-    console.log(myObject(E)); // just checkig if E is changed
-    module.exports = myObject;
+}
+return MATH_CONSTANTS.E;
+}
+const E = myObject();
+console.log(myObject(E)); // just checkig if E is changed
+module.exports = myObject;
